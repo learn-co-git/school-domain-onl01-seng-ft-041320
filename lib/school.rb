@@ -14,6 +14,14 @@ class School
         @roster[grade] = student.split(',')
       end
     end
+    
+    def grade(n)
+      @roster.each do |k, v|
+        if k == n
+          return v
+        end
+      end
+    end
 
   end
 
