@@ -11,7 +11,7 @@ class School
       if @roster.has_key?(grade)
         @roster[grade] << student
       else
-        @roster[grade] = student.split(' ')
+        @roster[grade] = student.split(',')
       end
     end
 
