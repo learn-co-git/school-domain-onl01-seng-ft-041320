@@ -24,7 +24,12 @@ class School
     end
     
     def sort
-      @roster
+      new_roster = {}
+      keys = @roster.keys
+      keys.sort.each do |key|
+        new_roster[key] =  @roster[key]
+      end 
+        return new_roster
     end
 
   end
